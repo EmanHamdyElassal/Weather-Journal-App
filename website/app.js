@@ -1,10 +1,9 @@
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
-
+let newDate = d.getMonth() + 1 + "/" + d.getDate() + "/" + d.getFullYear();
 const baseUrl = 'https://api.openweathermap.org/data/2.5/weather?zip=';
-const apiKey = '&appid=e36adcbdaba9200bd98e956086a53ed9';
+const apiKey = '&appid=e36adcbdaba9200bd98e956086a53ed9&units=imperial';
 
 document.getElementById('generate').addEventListener('click', performAction); 
 function performAction(e) {
